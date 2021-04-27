@@ -17,8 +17,12 @@ body{
     background: linear-gradient(rgb(47,150,163),rgb(0, 33, 223));
 }
 
-.logo{
-    
+.logo img{
+    max-width: 100%; 
+    height: 60px;
+display:block; 
+height: auto;
+
 }
 
 /*  */
@@ -98,6 +102,9 @@ body{
     margin-top: 4rem;
 }
 #movie{
+    margin: 2.4rem 0;
+}
+#recommended-movie{
     margin: 2.4rem 0;
 }
 .movie-item{
@@ -306,10 +313,16 @@ body{
     .movie-details{
         width: 700px;
     }
+
+    .logo img{
+        height: 40px;
+    }
 }
 
 @media screen and (min-width: 992px){
     #movie{
         grid-template-columns: repeat(3, 1fr);
     }
+
+   
 }
